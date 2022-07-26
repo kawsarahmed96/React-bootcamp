@@ -22,7 +22,7 @@
 //   );
 // }
 
-// function getProfession() {
+// function getProfile() {
 //   React.createElement(
 //     "div",
 //     { id: "divId" },
@@ -36,26 +36,28 @@
 //     React.createElement(
 //       "div",
 //       { id: "divId" },
-//       React.createElement(bio, { name: "kamal", prof: "React developer" })
+//       React.createElement(bio, { name: "siam", prof: "React developer" })
 //     );
 // }
 
 // ReactDOM.render(
-//   React.createElement(getProfession),
+//   React.createElement(getProfile),
 //   document.querySelector(".container")
 // );
 
 //jsx start
 function bio(props) {
   //jsx
-  <div className="profile">
-    <h1>i am {props.name}</h1>
-    <p>i am a {props.prof}</p>
-  </div>
-
+  return (
+    <div className="profile">
+      <h1>i am {props.name}</h1>
+      <p>i am a {props.prof}</p>
+    </div>
+  );
+}
 function getProfile() {
   return (
-    <div className="bioata">
+    <div id="biodata">
       <bio name="kawsar" prof="webdeveloper" />;
       <bio name="khalil" prof="designer" />;
     </div>
